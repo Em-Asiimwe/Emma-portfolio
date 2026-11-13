@@ -50,6 +50,13 @@ try {
     $context.Response.OutputStream.Write($bytes, 0, $bytes.Length)
     $context.Response.Close()
   }
+} catch [System.Net.HttpListenerException] {
+  if ($_.Exception.Message -like "*conflicts with an existing registration*" -or $_.Exception.ErrorCode -eq 183) {
+    Write-Error "Port $Port is already in use. Stop the other server or run this script with another port, for example: .\serve.ps1 -Port 5501"
+    exit 1
+  }
+
+  throw
 } finally {
   if ($listener.IsListening) {
     $listener.Stop()

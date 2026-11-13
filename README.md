@@ -75,6 +75,9 @@ To use another port:
 powershell -ExecutionPolicy Bypass -File .\serve.ps1 -Port 5501
 ```
 
+If port 5500 is already being used by another local server, stop that server or
+run the command above with an available port.
+
 ## Contact form setup
 
 The contact form uses [Web3Forms](https://web3forms.com/) and requires an access key.
