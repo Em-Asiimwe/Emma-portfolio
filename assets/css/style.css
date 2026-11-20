@@ -107,7 +107,7 @@ h1 { max-width: 700px; font-size: clamp(2.8rem, 5.2vw, 5rem); }
 .expertise-heading .about-kicker { margin-bottom: 12px; }
 .expertise-heading h2 { font-size: clamp(2rem, 4vw, 2.8rem); letter-spacing: -.06em; }
 .expertise-heading > p:last-child { margin: 7px 0 0; color: var(--muted); font-size: .84rem; }
-.expertise-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.expertise-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .expertise-card { min-height: 104px; padding: 14px 13px; border: 1px solid #ffffff08; border-radius: 8px; background: #202c3d; transition: .2s ease; }
 .expertise-card:hover { border-color: #3986e866; background: #24344a; transform: translateY(-2px); }
 .expertise-icon { display: block; margin-bottom: 12px; color: var(--accent-light); font-size: 1.15rem; font-weight: 700; line-height: 1; }
