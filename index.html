@@ -3,7 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Emma Asiimwe — software developer portfolio.">
+  <meta name="description" content="Emma Asiimwe is a Computer Science finalist building mobile, web, backend, and intelligent software systems.">
+  <meta property="og:title" content="Emma Asiimwe | Software Engineer">
+  <meta property="og:description" content="Computer Science finalist building mobile, web, backend, and intelligent software systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/profile.png">
+  <meta name="theme-color" content="#10151f">
+  <link rel="icon" type="image/png" href="assets/images/profile.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Emma Asiimwe | Software Engineer">
+  <meta name="twitter:description" content="Computer Science finalist building mobile, web, backend, and intelligent software systems.">
+  <meta name="twitter:image" content="assets/images/profile.png">
   <title>Emma Asiimwe | Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +32,7 @@
       <div class="nav-links" id="primary-menu">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact" class="nav-cta">Let's talk <span aria-hidden="true">↗</span></a>
       </div>
@@ -32,8 +43,8 @@
     <section class="hero container">
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> Available for opportunities</p>
-        <h1>Innovative<br><em>solutions</em> that matter.</h1>
-        <p class="hero-text">I'm Emma Asiimwe, a Computer Science finalist who turns thoughtful ideas into reliable, human-centered software.</p>
+        <h1>Innovative<br><em class="typing-text" data-phrases='["solutions that matter.","products people trust.","ideas into impact."]'>solutions that matter.</em></h1>
+        <p class="hero-text">I'm Emma Asiimwe, a Computer Science finalist building mobile, web, and intelligent software systems that solve real problems.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">View my work <span aria-hidden="true">↗</span></a>
           <a class="button button-ghost" href="#contact">Get in touch</a>
@@ -56,7 +67,7 @@
     <section class="section container about-section" id="about">
       <div class="about-panel">
         <p class="about-kicker">About me</p>
-        <h2>Building thoughtful products <em>through technology.</em></h2>
+        <h2>Building thoughtful products <em class="typing-text" data-phrases='["through technology.","with purpose.","for real people."]'>through technology.</em></h2>
         <p class="about-lead">I’m Emma Asiimwe, a Computer Science finalist at Makerere University who builds accessible, dependable digital products across mobile applications, web systems, backend services, and applied machine learning.</p>
         <div class="about-skills">
           <article class="about-skill"><span class="about-icon" aria-hidden="true">&lt;/&gt;</span><h3>Software Development</h3><p>Python, Django, Flutter</p></article>
@@ -67,7 +78,7 @@
         <div class="about-stats">
           <div><strong>Makerere University, Kampala</strong><span>BSc Computer Science · 2023–2027</span></div>
           <div><strong>2026</strong><span>National Science Week Exhibitor</span></div>
-          <div><strong class="project-count" data-count="5" data-suffix="+">0+</strong><span>Project areas</span></div>
+          <div><strong class="project-count" data-count="5" data-suffix="+">5+</strong><span>Project areas</span></div>
         </div>
       </div>
     </section>
@@ -75,7 +86,7 @@
     <section class="section container expertise-section" id="skills">
       <div class="expertise-heading">
         <p class="about-kicker">What I do</p>
-        <h2>Technical <em>Expertise</em></h2>
+        <h2>Technical <em class="typing-text" data-phrases='["Expertise","craftsmanship","problem-solving"]'>Expertise</em></h2>
         <p>Technologies and engineering disciplines I work with.</p>
       </div>
       <div class="expertise-grid">
@@ -89,11 +100,38 @@
       </div>
     </section>
 
+    <section class="section container experience-section" id="experience">
+      <div class="experience-heading">
+        <p class="about-kicker">Experience &amp; research</p>
+        <h2>Learning by <em class="typing-text" data-phrases='["building.","solving.","exploring."]'>building.</em></h2>
+        <p>Practical experience across software delivery, communication, and applied machine learning research.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <div class="experience-meta"><span>June–September 2025</span><span>Biiteek</span></div>
+          <h3>Software Development Intern</h3>
+          <ul>
+            <li>Contributed to the SABS rental management system and business software improvements.</li>
+            <li>Supported UI development, testing, debugging, documentation, and client-feedback implementation.</li>
+            <li>Collaborated with the development team to investigate issues and deliver features.</li>
+          </ul>
+        </article>
+        <article class="experience-card">
+          <div class="experience-meta"><span>3 years</span><span>Part-time</span></div>
+          <h3>Mathematics Teacher</h3>
+          <ul>
+            <li>Taught Mathematics to upper-primary learners.</li>
+            <li>Strengthened communication, explanation, mentoring, and learner-support skills.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
     <section class="section projects-section" id="projects">
       <div class="container">
         <div class="projects-intro">
           <p class="about-kicker">Portfolio / My work</p>
-          <h2>Projects &amp; <em>Case Studies</em></h2>
+          <h2>Projects &amp; <em class="typing-text" data-phrases='["Case Studies","real-world work","selected builds"]'>Case Studies</em></h2>
           <p>A selection of software applications, engineering solutions and research projects demonstrating my technical capabilities.</p>
         </div>
         <div class="project-filters" aria-label="Project filters">
@@ -101,13 +139,13 @@
         </div>
         <p class="featured-label">Featured project</p>
         <article class="featured-project" data-category="mobile">
-          <a class="featured-images" href="https://joelkabanda.github.io/Quicmed-website/" target="_blank" rel="noopener"><span class="screenshot-frame"><img src="assets/images/projects/quickmed-dashboard.png" alt="QuickMed medication dashboard"></span><span class="screenshot-frame"><img src="assets/images/projects/quickmed-login.png" alt="QuickMed login screen"></span></a>
+          <a class="featured-images" href="https://joelkabanda.github.io/Quicmed-website/" target="_blank" rel="noopener"><span class="screenshot-frame"><img src="assets/images/projects/quickmed-dashboard.png" alt="QuickMed medication dashboard" loading="lazy" decoding="async"></span><span class="screenshot-frame"><img src="assets/images/projects/quickmed-login.png" alt="QuickMed login screen" loading="lazy" decoding="async"></span></a>
           <div class="featured-content">
             <span class="project-category">Mobile Development</span>
             <h3>QuickMed — Healthcare Application</h3>
             <p>A location-aware medication reminder application designed to help patients prepare, travel, and arrive at the right place before their prescribed dose.</p>
             <h4>My contribution</h4>
-            <p>Developed mobile application features, structured medication workflows,Firebase-backed functionality and integrated Google Maps for a practical healthcare solution.</p>
+            <p>Developed mobile application features, structured medication workflows, built Firebase-backed functionality, and integrated Google Maps for a practical healthcare solution.</p>
             <h4>Technologies</h4>
             <div class="project-tech"><span>Flutter</span><span>Dart</span><span>Firebase</span><span>Location services</span></div>
             <div class="project-links"><a href="https://joelkabanda.github.io/Quicmed-website/" target="_blank" rel="noopener">View Case Study ↗</a><a href="https://github.com/joelkabanda/QuickMed" target="_blank" rel="noopener">View on GitHub ↗</a></div>
@@ -115,7 +153,7 @@
         </article>
         <div class="secondary-projects">
           <article class="featured-project project-case-study" data-category="research mobile">
-            <a class="featured-images single-image" href="https://militarydashboaord.vercel.app/" target="_blank" rel="noopener"><span class="screenshot-frame"><img src="assets/images/projects/military-dashboard.png" alt="Military Communication Security System dashboard"></span></a>
+            <a class="featured-images single-image" href="https://militarydashboaord.vercel.app/" target="_blank" rel="noopener"><span class="screenshot-frame"><img src="assets/images/projects/military-dashboard.png" alt="Military Communication Security System dashboard" loading="lazy" decoding="async"></span></a>
             <div class="featured-content">
               <span class="project-category">Security &amp; Mobile Development</span>
               <h3>Military Communication Security System</h3>
@@ -128,7 +166,7 @@
             </div>
           </article>
           <article class="featured-project project-case-study" data-category="web">
-            <a class="featured-images" href="https://relay-manual-46163299.figma.site" target="_blank" rel="noopener"><span class="screenshot-frame"><img src="assets/images/projects/swahara-login.png" alt="Swahara login screen"></span><span class="screenshot-frame"><img src="assets/images/projects/swahara-dashboard.png" alt="Swahara agreements dashboard"></span></a>
+            <a class="featured-images" href="https://relay-manual-46163299.figma.site" target="_blank" rel="noopener"><span class="screenshot-frame"><img src="assets/images/projects/swahara-login.png" alt="Swahara login screen" loading="lazy" decoding="async"></span><span class="screenshot-frame"><img src="assets/images/projects/swahara-dashboard.png" alt="Swahara agreements dashboard" loading="lazy" decoding="async"></span></a>
             <div class="featured-content">
               <span class="project-category">Product Design</span>
               <h3>Swahara Platform — Smart Contracts system</h3>
@@ -142,18 +180,30 @@
           </article>
           <article class="featured-project project-case-study" data-category="web">
             <div class="featured-images">
-              <span class="screenshot-frame"><img src="assets/images/projects/sabs-login.png" alt="SABS Properties login screen"></span>
-              <span class="screenshot-frame"><img src="assets/images/projects/sabs-invoices.png" alt="SABS rental invoices dashboard"></span>
+              <span class="screenshot-frame"><img src="assets/images/projects/sabs-login.png" alt="SABS Properties login screen" loading="lazy" decoding="async"></span>
+              <span class="screenshot-frame"><img src="assets/images/projects/sabs-invoices.png" alt="SABS rental invoices dashboard" loading="lazy" decoding="async"></span>
             </div>
             <div class="featured-content">
               <span class="project-category">Web &amp; Backend Development</span>
               <h3>SABS — Rental Management System</h3>
               <p>A rental management platform for property administration, tenant management, rent invoicing, payment tracking, and financial reporting.</p>
               <h4>My contribution</h4>
-              <p>Built backend functionality for property and tenant workflows, rent and invoice management, receipts, and financial reports. i integrated the MySQL database and was ressponsible for implementing client feedback.</p>
+              <p>Built backend functionality for property and tenant workflows, rent and invoice management, receipts, and financial reports. I integrated the MySQL database and implemented client feedback.</p>
               <h4>Technologies</h4>
               <div class="project-tech"><span>Python</span><span>Django</span><span>MySQL</span><span>Bootstrap</span></div>
               <div class="project-links"><a href="https://github.com/Biiteek-Glode-Ltd/sabs_rent_mgt_system" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+            </div>
+          </article>
+          <article class="featured-project project-case-study text-project" data-category="research">
+            <div class="text-project-visual" aria-hidden="true"><span>MFCC</span><span>ML</span><span>VOICE</span></div>
+            <div class="featured-content">
+              <span class="project-category">Applied Machine Learning</span>
+              <h3>Voice Pathology Diagnosis</h3>
+              <p>A research project exploring efficient voice-disorder classification from speech-signal characteristics.</p>
+              <h4>My contribution</h4>
+              <p>Conducted research using MFCC feature extraction, explored multi-strategy sparse learning, and investigated knowledge distillation for efficient diagnosis.</p>
+              <h4>Technologies</h4>
+              <div class="project-tech"><span>Python</span><span>Machine Learning</span><span>MFCC</span><span>Speech analysis</span></div>
             </div>
           </article>
         </div>
@@ -164,7 +214,7 @@
       <div class="container contact-layout">
         <div class="contact-copy">
           <p class="about-kicker">Contact Me</p>
-          <h2>Let’s work<br><em>together.</em></h2>
+          <h2>Let’s work<br><em class="typing-text" data-phrases='["together.","on something bold.","to make it real."]'>together.</em></h2>
           <p class="contact-intro">Have an idea, a challenge, or an opportunity? I’d love to hear from you and explore how we can build something meaningful.</p>
           <div class="social-links">
             <a class="social-linkedin" href="https://www.linkedin.com/in/emma-emmy-asiimwe-501a09369/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>

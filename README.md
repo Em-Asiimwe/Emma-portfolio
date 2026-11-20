@@ -22,6 +22,7 @@ The portfolio is designed to present Emma's work through concise case studies an
 - LinkedIn, GitHub, email, and WhatsApp contact links
 - Web3Forms contact submission with success and error notifications
 - Accessible labels, focus states, reduced-motion support, and semantic HTML
+- Social preview metadata, lazy-loaded project images, and a custom 404 page
 - Standalone PowerShell development server
 
 ## Technology
@@ -37,6 +38,7 @@ The portfolio is designed to present Emma's work through concise case studies an
 
 ```text
 Emma-portfolio/
+├── 404.html
 ├── assets/
 │   ├── css/
 │   │   └── style.css

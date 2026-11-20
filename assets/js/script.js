@@ -48,7 +48,7 @@ filterButtons.forEach((button) => {
 });
 
 const revealElements = document.querySelectorAll(
-  ".hero-copy, .hero-art, .about-section, .expertise-section, .projects-intro, .featured-project, .contact-layout"
+  ".hero-copy, .hero-art, .about-section, .expertise-section, .experience-section, .projects-intro, .featured-project, .contact-layout"
 );
 const revealObserver = new IntersectionObserver(
   (entries, observer) => {
@@ -86,6 +86,42 @@ pageSections.forEach((section) => sectionObserver.observe(section));
 
 const supportsHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+document.querySelectorAll(".typing-text").forEach((element) => {
+  const phrases = JSON.parse(element.dataset.phrases || "[]");
+
+  if (reducedMotion || phrases.length < 2) {
+    return;
+  }
+
+  let phraseIndex = 0;
+  let characterIndex = element.textContent.length;
+  let deleting = true;
+
+  const typePhrase = () => {
+    const phrase = phrases[phraseIndex];
+
+    if (deleting) {
+      characterIndex -= 1;
+    } else {
+      characterIndex += 1;
+    }
+
+    element.textContent = phrase.slice(0, characterIndex);
+
+    if (deleting && characterIndex === 0) {
+      deleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+    } else if (!deleting && characterIndex === phrase.length) {
+      deleting = true;
+    }
+
+    const delay = deleting ? 55 : 85;
+    window.setTimeout(typePhrase, characterIndex === phrase.length ? 1800 : delay);
+  };
+
+  window.setTimeout(typePhrase, 1800);
+});
 
 if (supportsHover && !reducedMotion) {
   document.addEventListener("pointermove", (event) => {
@@ -129,11 +165,13 @@ if (projectCount && statsRow) {
         startTime = currentTime;
       }
 
-      const progress = ((currentTime - startTime) % duration) / duration;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
       const currentCount = Math.floor(progress * targetCount);
       projectCount.textContent = `${currentCount}${suffix}`;
 
-      window.requestAnimationFrame(updateCount);
+      if (progress < 1) {
+        window.requestAnimationFrame(updateCount);
+      }
     };
 
     window.requestAnimationFrame(updateCount);
